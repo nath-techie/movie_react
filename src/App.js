@@ -3,9 +3,10 @@ import React from 'react';
 import './App.css';
 import MovieCard from './MovieCard';
 import li from './li.png';
-import ig from './insta2.png';
+ 
+const API_URL = `http://www.omdbapi.com/?i=tt3896198&apikey=${process.env.REACT_APP_OMDB_API_KEY}`;
 
-const API_URL='http://www.omdbapi.com/?i=tt3896198&apikey=a3a67427';
+ 
  
 
 const App = () =>{
@@ -62,15 +63,9 @@ setMovies(data.Search);
 <div className="follow-me">
       Follow me on:
        
-      <a href="https://www.linkedin.com/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/a-sabari-nathan/" target="_blank" rel="noopener noreferrer">
         <img src={li} />
-      </a>
-         
-  
-      <a href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
-      <img src={ig} />
-      </a>
-     
+      </a> 
    
       
     </div>
